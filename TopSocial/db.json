@@ -1,0 +1,128 @@
+{
+  "users": [
+    {
+      "id": "user-uuid-1",
+      "name": "Raymond",
+      "friendList": [
+        {
+          "userId": "user-uuid-2",
+          "friendLevel": 1,
+          "accessLevel": 0
+        },
+        {
+          "userId": "user-uuid-4",
+          "friendLevel": 3,
+          "accessLevel": 3
+        }
+      ]
+    },
+    {
+      "id": "user-uuid-2",
+      "name": "Ally",
+      "friendList": [
+        {
+          "userId": "user-uuid-1",
+          "friendLevel": 1,
+          "accessLevel": 0
+        },
+        {
+          "userId": "user-uuid-3",
+          "friendLevel": 3,
+          "accessLevel": 3
+        }
+      ]
+    },
+    {
+      "id": "user-uuid-3",
+      "name": "Ben",
+      "friendList": [
+        {
+          "userId": "user-uuid-2",
+          "friendLevel": 1,
+          "accessLevel": 0
+        },
+        {
+          "userId": "user-uuid-1",
+          "friendLevel": 3,
+          "accessLevel": 3
+        }
+      ]
+    },
+    {
+      "id": "user-uuid-4",
+      "name": "Chris",
+      "friendList": [
+        {
+          "userId": "user-uuid-5",
+          "friendLevel": 1,
+          "accessLevel": 2
+        },
+        {
+          "userId": "user-uuid-1",
+          "friendLevel": 3,
+          "accessLevel": 3
+        }
+      ]
+    },
+    {
+      "id": "user-uuid-5",
+      "name": "Jane",
+      "friendList": [
+        {
+          "userId": "user-uuid-3",
+          "friendLevel": 1,
+          "accessLevel": 0
+        },
+        {
+          "userId": "user-uuid-4",
+          "friendLevel": 3,
+          "accessLevel": 3
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "card-uuid-1",
+      "userId": "user-uuid-1",
+      "text": "the context that want to show",
+      "pictureLink": "https://xxx.com/picture",
+      "like": [
+        {
+          "userId": "user-uuid-2"
+        },
+        {
+          "userId": "user-uuid-x"
+        }
+      ]
+    },
+    {
+      "id": "card-uuid-2",
+      "userId": "user-uuid-2",
+      "text": "the context that want to show",
+      "pictureLink": "https://xxx.com/picture",
+      "like": [
+        {
+          "userId": "user-uuid-3"
+        },
+        {
+          "userId": "user-uuid-4"
+        }
+      ]
+    },
+    {
+      "id": "card-uuid-3",
+      "userId": "user-uuid-2",
+      "text": "the context that want to show",
+      "pictureLink": "https://xxx.com/picture",
+      "like": [
+        {
+          "userId": "user-uuid-3"
+        },
+        {
+          "userId": "user-uuid-4"
+        }
+      ]
+    }
+  ]
+}

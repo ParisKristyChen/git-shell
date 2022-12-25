@@ -1,0 +1,34 @@
+.container {
+  width: 600px;
+  height: 600px;
+  /* overflow: scroll溢出部分被截断，但添加了一个滚动条以查看其余内容 */
+  overflow: scroll;
+  margin: 0 auto;
+  border: 1px solid gray;
+  background-color: lightblue;
+  color: #fff;
+  padding: 20px;
+}
+
+h3,
+.btnBox {
+  display: flex;
+  justify-content: center;
+}
+/* ul unordered list前面没有序号的清单 li列表*/
+ul li {
+    list-style-type: none;
+    counter-increment: item;
+    margin-bottom: 20px;
+  }
+  /* :before relate叙述一下 */
+  ul li:before {
+    content: counter(item);
+    font-size: 80%;
+    background-color: #f9dd94;
+    color: lightblue;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 3px;
+    margin-right: 5px;
+  }
